@@ -1,0 +1,73 @@
+.homepage_container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:60%;
+    min-width: 450px;
+    height:80vh;
+    margin:0 auto;  
+    gap:1em;
+}
+
+
+.img_container {
+    width: 50%;
+    flex:1.5;
+    background: url(../../misc/img/list-rick-and-morty.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.characters_container {
+
+    display: grid;
+    width:80%;
+    flex:6;
+    column-gap:1rem;
+    row-gap:1rem;
+    grid-template-columns:repeat(4, minmax(40px,1fr));
+    grid-template-rows:0.5fr 0.5fr;
+    padding-top: 2rem;
+}
+
+.input {
+    display: flex;
+    width: 80%;
+    height: 5%;
+    border-radius:10px;
+    padding-left:2.5rem;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+
+  @media screen and (max-width: 450px) {
+
+
+    .homepage_container {
+       
+        width:100vw;
+        height:90vh;
+        margin:0 auto;  
+        gap:1em;
+        overflow-y:scroll;
+    }
+    .img_container {
+        flex:1;
+        width:80vw;
+    }
+    .input {
+        flex:0.2;
+        width: 80vw;
+    } 
+     .characters_container {
+
+        display:flex; 
+        width:80vw;
+        flex:5;
+        flex-direction: column;
+        overflow:scroll; 
+
+    }
+  }

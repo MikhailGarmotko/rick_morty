@@ -1,0 +1,19 @@
+.character_container {
+    display: flex;
+    flex-direction:column;
+    font-size:0.8em;
+    gap:5px;
+    box-shadow: 0px 0.950625px 4.75313px rgba(0, 0, 0, 0.2), 0px 2.85188px 3.8025px rgba(0, 0, 0, 0.12), 0px 1.90125px 3.8025px rgba(0, 0, 0, 0.14);
+    border-radius: 3.8025px;
+}
+
+.species {
+ color:grey;
+ font-size: 0.8em;
+}
+
+.padding_left {
+    padding-left: 1em;
+}
+
+
