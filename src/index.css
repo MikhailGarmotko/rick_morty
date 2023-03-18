@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-size: cover;
   display: flex;
@@ -12,6 +11,6 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
 }

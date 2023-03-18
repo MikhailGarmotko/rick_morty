@@ -1,9 +1,9 @@
 export type Decoded = {
-    name: string;
-    email: string;
-    jti: string;
-  };
+  name: string;
+  email: string;
+  jti: string;
+};
 
- export  type Props = {
-    children: JSX.Element;
-  };
+export type Props = {
+  children: JSX.Element;
+};

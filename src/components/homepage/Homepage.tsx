@@ -19,7 +19,6 @@ export const HomePage = (): JSX.Element => {
   const user = useAppSelector((state) => state.userProfile.user);
   console.log(user);
   const [filterValue, setFilterValue] = useState<any>("");
-  const [userName, setUserName] = useState<string>(user);
   const { data } = useGetCharactersQuery();
 
   const signOutWithGoogle = () => {

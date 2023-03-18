@@ -5,23 +5,19 @@ import style from "./CharacterProfile.module.css";
 export const CharacterProfile = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const {
-    gender,
-    status,
-    origin,
-    type,
-    name,
-    image,
-    species,
-  } = location.state.props;
+  const { gender, status, origin, type, name, image, species } =
+    location.state.props;
   const onClcikGoBack = () => {
     navigate("/");
   };
 
   return (
     <div className={style.profile_container}>
-      <input onClick={onClcikGoBack} className={style.go_back} placeholder = "GO BACK">
-      </input>
+      <input
+        onClick={onClcikGoBack}
+        className={style.go_back}
+        placeholder="GO BACK"
+      ></input>
       <div className={style.img_container}>
         <img className={style.img} src={image}></img>
       </div>
