@@ -4,12 +4,18 @@ import { useRoutes } from 'react-router-dom';
 import './App.css';
 import { HomePage } from './components/homepage/Homepage';
 import { CharacterProfile } from './components/characters/CharacterProfile/CharacterProfile';
+import { ProtectedRoute } from './components/ProtectedRoute';
 
 const App: React.FC = () => {
+
   const routes: RouteObject[] = [
     {
       path: '/',
-      element: <HomePage />
+      element: (
+        <ProtectedRoute>
+          <HomePage />
+        </ProtectedRoute>
+      )
     },
     {
       path: '/character',

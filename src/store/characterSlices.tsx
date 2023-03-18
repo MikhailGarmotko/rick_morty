@@ -11,7 +11,7 @@ export const charactersSlice = createSlice({
   reducers: {
     setCharacters: (state, action:PayloadAction<any>) => {
       const characters = action.payload.results;
-      state.characters = characters.slice(0,8);
+      state.characters = characters;
     },
   }
 });
